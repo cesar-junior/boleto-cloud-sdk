@@ -13,7 +13,8 @@
     "require": {
         "php": ">=7.1",
         "ext-curl": "*",
-        "guzzlehttp/guzzle": "~6.0"
+        "guzzlehttp/guzzle": "~6.0",
+        "millerp/boleto-cloud": "master@dev"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.5"
