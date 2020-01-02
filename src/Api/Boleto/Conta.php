@@ -31,6 +31,10 @@ class Conta implements ParserInteface
      * @var string
      */
     private $token;
+    /**
+     * @var string
+     */
+    private $convenio;
 
     /**
      * @return string
@@ -133,6 +137,22 @@ class Conta implements ParserInteface
     }
 
     /**
+     * @return string
+     */
+    public function getConvenio(): string
+    {
+        return $this->convenio;
+    }
+
+    /**
+     * @param string $convenio
+     */
+    public function setConvenio(string $convenio): void
+    {
+        $this->convenio = $convenio;
+    }
+
+    /**
      * @param string $raiz
      *
      * @return array
@@ -146,6 +166,7 @@ class Conta implements ParserInteface
                 $raiz.'.conta.agencia'  => $this->agencia,
                 $raiz.'.conta.numero'   => $this->numero,
                 $raiz.'.conta.carteira' => $this->carteira,
+                $raiz.'.conta.convenio' => $this->convenio,
             ];
     }
 }
