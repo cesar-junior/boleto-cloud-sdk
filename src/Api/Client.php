@@ -7,6 +7,7 @@ use GuzzleHttp\Exception\RequestException;
 
 /**
  * Class Boleto.
+ * 1
  */
 class Client
 {
